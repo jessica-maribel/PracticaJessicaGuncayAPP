@@ -21,43 +21,146 @@
         tools:context=".MainActivity">
 
         <TextView
-            android:id="@+id/labelTitulo"
-            android:layout_width="271dp"
-            android:layout_height="109dp"
-            android:layout_marginTop="508dp"
-            android:text="Hello World!"
+            android:id="@+id/textView"
+            android:layout_width="181dp"
+            android:layout_height="136dp"
+            android:text="                          "
             android:textAlignment="center"
-            android:textColor="#2196F3"
-            android:textSize="30sp"
-            android:textStyle="bold"
-
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.792"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toTopOf="@+id/guideline8"
+            app:layout_constraintVertical_bias="0.46" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txtNombre"
+            android:layout_width="166dp"
+            android:layout_height="53dp"
+            android:text="                                   "
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toTopOf="@+id/guideline7"
+            app:layout_constraintVertical_bias="0.666" />
+
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="127dp"
+            android:layout_height="85dp"
+            android:text="Registrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline11"
+            app:layout_constraintVertical_bias="0.789" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="269dp"
-            tools:layout_editor_absoluteY="126dp" />
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.59" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
 
         <TextView
             android:id="@+id/textView2"
+            android:layout_width="264dp"
+            android:layout_height="109dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Registrar"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="262dp"
-            tools:layout_editor_absoluteY="207dp" />
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.38" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txtPassword"
+            android:layout_width="127dp"
+            android:layout_height="91dp"
+            android:text="Password: "
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline8"
+            app:layout_constraintVertical_bias="0.38" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="129dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:text="Nombre y Apellido:"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline7"
+            app:layout_constraintVertical_bias="0.506" />
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="262dp"
-            tools:layout_editor_absoluteY="290dp" />
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.84" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario:"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="                                   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
